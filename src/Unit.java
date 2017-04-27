@@ -37,6 +37,12 @@ public class Unit implements IUnit {
 		}
 	}
 
+	@Override
+	public void bounce() {
+		vx *= -1;
+		vy *= -1;
+	}
+
 	public int getX() {
 		return (int) x;
 	}

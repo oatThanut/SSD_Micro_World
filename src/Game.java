@@ -1,11 +1,7 @@
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
+import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 public class Game extends JFrame {
 
@@ -37,6 +33,8 @@ public class Game extends JFrame {
 			units.add(unit);
 		}
 		// Add Legacy Units here
+		LegacyUnit legacyUnit = new LegacyUnit();
+		units.add(new LegacyToUnit(legacyUnit));
 	}
 
 	private void start() {

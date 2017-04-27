@@ -3,6 +3,8 @@ public interface IUnit {
 
 	public void move();
 
+	public void bounce();
+
 	public int getX();
 
 	public int getY();
