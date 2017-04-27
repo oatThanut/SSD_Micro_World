@@ -27,10 +27,6 @@ public class LegacyUnit {
 		}
 	}
 
-	public void bounce() {
-
-	}
-
 	public int getX() {
 		return (int) x;
 	}
